@@ -5,10 +5,24 @@ package code;
  * @author isaac
  *
  */
-public class Creature extends Thing {
+public abstract class Creature extends Thing {
+	public Thing eaten;
 	
 	public Creature(String n) {
 		super(n);
+		eaten = null;
 	}
+	
+	public void eat(Thing t) {
+		eaten = t;
+		System.out.println(this + " has just eaten a " + t);
+	}
+
+	public void whatDidYouEat() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public abstract void move();
 
 }
