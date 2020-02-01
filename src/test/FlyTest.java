@@ -9,7 +9,7 @@ public class FlyTest {
 	public static void main(String[] args) {
 		Fly f = new Fly("f");
 		assert f.name.equals("f") : " Name inconsistent";
-		assert f.toString().equals("f code.Fly") : " toString unidentified";
+		assert f.toString().equals("f Fly") : " toString unidentified";
 		Bat b = new Bat("b");
 		f.eat(b);
 		assert f.eaten == null : " Fly ate animate object";

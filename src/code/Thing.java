@@ -17,7 +17,7 @@ public class Thing {
 		if(this.getClass().equals(new Thing("").getClass())) {
 			return this.name;
 		} else {
-			return this.name + " " + this.getClass().getName();
+			return this.name + " " + this.getClass().getSimpleName();
 		}
 	}
 }

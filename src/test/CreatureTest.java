@@ -12,7 +12,7 @@ public class CreatureTest extends Creature {
 	public static void main(String[] args) {
 		Creature c = new CreatureTest("c");
 		assert c.name.equals("c") : " Name inconsistent";
-		assert c.toString().equals("c test.CreatureTest") : " toString unidentified";
+		assert c.toString().equals("c CreatureTest") : " toString unidentified";
 		Thing t = new Thing("t");
 		assert c.eaten == null : " Empty Stomach is not null";
 		c.eat(t);
