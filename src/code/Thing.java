@@ -7,5 +7,9 @@ package code;
  * @author Isaac Galang
  */
 public class Thing {
-
+	private String name;
+	
+	public Thing(String n) {
+		this.name = n;
+	}
 }

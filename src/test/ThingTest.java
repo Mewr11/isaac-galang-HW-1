@@ -1,5 +1,7 @@
 package test;
 
+import code.Thing;
+
 /**
  * Test class for <code>Thing.java</code>.
  * <hr>
@@ -12,6 +14,10 @@ public class ThingTest {
 	 * @param args - None
 	 */
 	public static void main(String[] args) {
-		
+		try {
+			Thing t = new Thing("t");
+		} catch (Exception e) {
+			System.out.println("Failed to create new Thing");
+		}
 	}
 }
