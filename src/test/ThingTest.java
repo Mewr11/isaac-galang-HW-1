@@ -9,15 +9,15 @@ import code.Thing;
  * @author Isaac Galang
  */
 public class ThingTest {
+
 	/**
 	 * Test function. Yells at you if it doesn't work.
 	 * @param args - None
 	 */
 	public static void main(String[] args) {
-		try {
-			Thing t = new Thing("t");
-		} catch (Exception e) {
-			System.out.println("Failed to create new Thing");
-		}
+		Thing t = new Thing("t");
+		assert t.name == "t" : " Name inconsistent";
+		assert t.toString() == "t" : " toString improper";
+		assert false : " Ensuring that tests go through.";
 	}
 }

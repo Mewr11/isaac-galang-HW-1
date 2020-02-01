@@ -7,9 +7,17 @@ package code;
  * @author Isaac Galang
  */
 public class Thing {
-	private String name;
+	public String name;
 	
 	public Thing(String n) {
 		this.name = n;
+	}
+	
+	public String toString() {
+		if(this.getClass().equals(new Thing("").getClass())) {
+			return this.name;
+		} else {
+			return this.name + " " + this.getClass().getName();
+		}
 	}
 }
