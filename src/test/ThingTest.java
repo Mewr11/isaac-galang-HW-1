@@ -16,8 +16,8 @@ public class ThingTest {
 	 */
 	public static void main(String[] args) {
 		Thing t = new Thing("t");
-		assert t.name == "t" : " Name inconsistent";
-		assert t.toString() == "t" : " toString improper";
+		assert t.name.equals("t") : " Name inconsistent";
+		assert t.toString().equals("t") : " toString improper";
 		assert false : " Ensuring that tests go through.";
 	}
 }
